@@ -1,12 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect} from 'react';
+import axios from 'axios';
+
+import Navbar from './components/navbar';
+import HeroSection from './components/HeroSection';
+import Category from './components/CategorySection';
+import Products from './AllProduct';
 
 function App() {
   return (
-    <div className="App">
-      ECOMMERCE
-    </div>
+ <>
+ <Navbar/>
+ <HeroSection/>
+ <Category/>
+ <Products/>
+ </>
+    
   );
 }
 
